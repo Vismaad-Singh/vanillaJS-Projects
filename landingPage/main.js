@@ -41,13 +41,47 @@ else if(hour<18){
 else{
     document.body.style.backgroundImage = "URL('/images/Night.jpeg')";
     greeting.textContent = "Good Evening";
+    document.body.style.color = '#ffffff';
 
 }
 
 }
+function getName(){
+    if(localStorage.getItem("name")===null){
+    name.textContent = 'Enter Name';    
+    }
+    else{
+        name.textContent = localStorage.getItem('name');
+    }
+}
+
+// function setName(e){
+//     if(e.type == 'keypress'){
+//             if(){
+
+//             }
+//     }
+//     else{
+//         localStorage.setItem('name',e.target.innerText);
+//     }
+// }
+
+// function getFocus(){
+//     if(localStorage.getItem("focus")===null){
+//     focus.textContent = 'Enter Focus';    
+//     }
+//     else{
+//         focus.textContent = localStorage.getItem('focus');
+//     }
+// }
+
+// name.addEventListners("keypress", setName);
+// name.addEventListners("blur", setName)
 
 
 
 
+// getFocus();
+// getName();
 setBgGreeting();
 showTime();
