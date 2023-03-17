@@ -65,10 +65,14 @@ button:focus {
 
 .password__container {
 	display: flex;
-	background: #f02b09;
+	background: #ef4747;
 	padding: 1.5rem;
 	margin-bottom: 1rem;
 	align-items: center;
+}
+.password__text{
+	margin-right: 5%;
+	
 }
 
 .copy__btn {
@@ -78,6 +82,10 @@ button:focus {
 	background-color: var(--primary);
 	border: none;
 	min-width: 7rem;
+}
+.copy__btn:hover{
+	background-color: #ffffff;
+	color: #000;
 }
 
 .password__text {
@@ -109,6 +117,11 @@ label {
 	border-radius: 5px;
 	cursor: pointer;
 	width: 100%;
+}
+.generate__btn:hover{
+	background-color: #ffffff;
+	color: #000;
+	border: 1px solid #ff6207;
 }
 
 #length {
